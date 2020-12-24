@@ -1,7 +1,8 @@
 n, k = map(int, input().split())
 h = list(map(int, input().split()))
 
-dp = [10 ** 9] * n
+
+dp = [10 ** 9 for _ in range(n)]
 dp[0] = 0
 
 for i in range(1, n):
